@@ -1,13 +1,13 @@
 function topThreeWords(text) {
   return text
-    .replace(/[^\w' ]| ' /gi, "")
+    .replace(/[^\w' ]| ' /gi, '')
     .toLowerCase()
-    .split(" ")
+    .split(' ')
     .filter((b) => b)
     .reduce(
       ([acc, _], next) => [
         ((acc[next] = (acc[next] ?? 0) + 1), acc),
-        Object.entries(acc),
+        Object.entries(acc)
       ],
       [{}, []]
     )
@@ -15,7 +15,7 @@ function topThreeWords(text) {
     .pop()
     .sort((a, b) => b[1] - a[1])
     .map((v) => v[0])
-    .slice(0, 3);
+    .slice(0, 3)
 }
 
-module.exports = topThreeWords;
+module.exports = topThreeWords
