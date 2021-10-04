@@ -1,0 +1,15 @@
+{
+  "name": "codewars",
+  "version": "1.0.0",
+  "description": "Attempt to solve codewars problems by @bbuccianti",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest"
+  },
+  "author": "bbuccianti",
+  "license": "MIT",
+  "devDependencies": {
+    "chai": "^4.3.4",
+    "jest": "^27.2.4"
+  }
+}
